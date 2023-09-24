@@ -1,0 +1,253 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/* ... Kode CSS syarat dan ketentuan ... */
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center; /* Mengatur rata tengah pada paragraf */
+  }
+  
+a.setuju-link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px; /* Sesuaikan ukuran teks dengan preferensi Anda */
+  }
+a.syarat-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 12px; /* Sesuaikan ukuran teks dengan preferensi Anda */
+  }
+  
+  a.syarat-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Kode CSS Responsif */
+
+/* Responsif ketika lebar layar kurang dari atau sama dengan 768px */
+@media (max-width: 768px) {
+    .container {
+      max-width: 90%; /* Mengurangi lebar kontainer */
+    }
+  
+    label,
+    input[type="text"],
+    input[type="password"],
+    button {
+      width: 100%; /* Mengisi lebar elemen input sesuai dengan kontainer */
+    }
+  }
+  
+  /* Responsif ketika lebar layar kurang dari atau sama dengan 480px */
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px; /* Mengurangi padding kontainer */
+    }
+  
+    h1 {
+      font-size: 20px; /* Mengurangi ukuran judul */
+    }
+  
+    /* Mengurangi ukuran teks pada tautan Syarat & Ketentuan dan Kebijakan Privasi */
+    a.syarat-link,
+    a.setuju-link {
+      font-size: 10px;
+    }
+  
+    /* Mengatur tata letak teks pada paragraf Syarat & Ketentuan dan Kebijakan Privasi */
+    p {
+      text-align: center;
+    }
+  
+    /* Mengatur jarak antara tautan pada paragraf Syarat & Ketentuan dan Kebijakan Privasi */
+    p a {
+      margin: 5px;
+    }
+  }
+ /* Kode CSS untuk tampilan section */
+.home-section {
+    background-color: #f7f7f7;
+    padding: 40px;
+    display: flex;
+    align-items: center; /* Mengatur vertikal centering */
+    border: 2px solid #ddd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between; /* Mengatur agar gambar dan teks berada di sebelah kiri dan kanan */
+    align-items: center;
+    width: 100%;
+}
+
+.image-container img {
+    max-width: 10%;
+    height: 50px;
+}
+
+.text-container {
+    flex: 1; /* Menggunakan flex untuk mengisi sisa ruang */
+    padding: 0 20px; /* Memberikan jarak antara gambar dan teks */
+}
+
+.home-section h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+/* Mengatur tampilan form daftar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling container */
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling judul halaman */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styling label dan input */
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Styling tombol Daftar */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f50057;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d5004b;
+}
+
+/* Styling tautan Login */
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+a {
+    color: #f50057;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

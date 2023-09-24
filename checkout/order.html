@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Confirmation Order</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.store.js"></script>
+
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script>
+  function takeScreenshot() {
+	// Capture the screenshot of the entire document
+	html2canvas(document.body).then(function(canvas) {
+	  // Convert the canvas to base64 image data
+	  var screenshotData = canvas.toDataURL("image/png");
+	  
+	  // Create an "a" element to download the screenshot
+	  var link = document.createElement('a');
+	  link.href = screenshotData;
+	  link.download = 'screenshot.png';
+	  
+	  // Trigger the download
+	  link.click();
+	});
+  }
+</script>
+
+
+</head>
+
+<body id="checkout-page">
+
+<div id="site">
+	<div id="content">
+		<h1>Order Confirmation</h1>
+			<table id="checkout-cart" class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+		 <div id="pricing">
+			
+			<p id="shipping">
+				<strong>Shipping</strong>: <span id="sshipping"></span>
+			</p>
+			
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		 </div>
+		 
+		 <div id="user-details">
+		 	<div id="user-details-content"></div>
+		 </div>
+		 
+		 <div id="content">
+			<p>CARA PEMESANAN </p>
+			<p><li>Cetak confirmasi pesanan Anda</li></p>
+			<p><li>Lakukan pembayaran via Transfer, Gopay atau Ovo</li></p>
+			<p><li>Kirim bukti pembayaran dan lampirkan confirmasi pemesanan melalui Whatsapp</li></p>
+			<p><li>Tunggu pesanan di proses</li></p></div>		 
+		 
+	</div>
+	<button class="inv-button" onclick="takeScreenshot()">Print Invoice</button>
+
+</div><br></br>
+
+<div>
+<button class="wa-button" onclick="shareOnWhatsApp()">Confirmation Payment</button>
+  <script>
+    function shareOnWhatsApp() {
+      var message = "Hi kak, mohon di proses ya pesanannya :)";
+      var phone = "6282113356329"; // Replace with the desired phone number
+      
+      var shareLink = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+      
+      window.open(shareLink);
+    }
+  </script>
+</div>  
+
+</body>
+</html>	
